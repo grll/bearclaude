@@ -7,7 +7,7 @@ A minimalistic Docker image with Claude CLI pre-installed for containerized usag
 Pull and run the image from Docker Hub:
 
 ```bash
-docker run --rm -it grll/bearclaude
+docker run --rm -it graille/bearclaude
 ```
 
 ## Features
@@ -21,20 +21,20 @@ docker run --rm -it grll/bearclaude
 Run Claude with specific commands:
 
 ```bash
-docker run --rm grll/bearclaude --help
-docker run --rm grll/bearclaude --version
+docker run --rm graille/bearclaude --help
+docker run --rm graille/bearclaude --version
 ```
 
 Mount your project directory:
 
 ```bash
-docker run --rm -v $(pwd):/workspace -w /workspace grll/bearclaude
+docker run --rm -v $(pwd):/workspace -w /workspace graille/bearclaude
 ```
 
 ## Build Locally
 
 ```bash
-git clone https://github.com/grll/bearclaude.git
+git clone https://github.com/graille/bearclaude.git
 cd bearclaude
 docker build -t bearclaude .
 ```
